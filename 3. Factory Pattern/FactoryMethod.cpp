@@ -49,7 +49,7 @@ class BurgerFactory{
 };
 
 class SinghBurger : public BurgerFactory{
-    Burger* createBurger(string &type)
+    Burger* createBurger(string &type) override
     {
         if(type == "Basic")
         {
@@ -64,7 +64,7 @@ class SinghBurger : public BurgerFactory{
 };
 
 class KingBurger : public BurgerFactory{
-    Burger* createBurger(string &type)
+    Burger* createBurger(string &type) override
     {
         if(type == "Basic")
         {
